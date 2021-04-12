@@ -1,0 +1,6 @@
+[lorrylan]
+name=lorrylan.net downloads
+baseurl=http://readynas.lorrylan.net/osmedia/lorrylan.net
+enabled=1
+gpgcheck=0
+

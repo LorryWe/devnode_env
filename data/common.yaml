@@ -1,0 +1,28 @@
+---
+lookup_options:
+  devnode_env::config:
+    merge:
+      strategy: 'deep'
+      merge_hash_arrays: true
+
+devnode_env::config:
+  dn_username: 'fred'
+  dn_uid: '501'
+  dn_gid: '501'
+  dn_groups: 'fred'
+  dn_homefolder: '/home/fred'
+  dn_shell: '/bin/bash'
+  dn_packagesx:
+    - ansible
+    - nfs-utils
+    - vim-enhanced
+    - git
+    - tree
+    - bind-utils
+    - jdk1.8.x86_64
+  dn_test_file_text: 'use_file'
+  dn_filedata: 'test'
+  dn_test_servername: "$::fqdn"
+  perform_app_upgrade: true
+  app_upgrade_package_uninstall: 'tree'
+  app_upgrade_package_install: 'glibc-devel'
